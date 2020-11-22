@@ -1,0 +1,141 @@
+1.1 
+1.1
+function replece (sentence, arr) {
+  let index = 0;
+  let nextSentence = '';
+  for (let i = 0; i<sentence.length; i++) {
+    if (sentence[i] === '_') {
+      nextSentence += arr[index]
+      index++
+    } else {
+      nextSentence+=sentence [i]}
+  }
+return nextSentence 
+}
+console.log (replece ('_, we have a _.', ['Houston', 'problem']))
+
+  2.
+  function filter (arr) {
+    let result = 0;
+    let arr2 =[]
+   for (let i=0 ; i< arr.length; i++) {
+     if (typeof arr[i] === `Number`) { 
+       arr2.push (arr[i] !== 0 && arr[i]%2 === 0);
+     }
+   } return arr2
+}
+  console.log (filter([ 8, 0, 1, `hey`, 12, 5 , true, `2`, null, 7, 3]));
+  3. 
+  function strOrNum (arr) {
+    let result = 0;
+     let a = arr[i]; let b=0
+     for (let i = 0; i < arr.length; ++i){
+        if (typeof result[a] === `number`) {
+           ++result[a];
+        }
+          else   ++result[b]
+         }
+         return (`Numbers: [a], Strings: [b]`)
+        }
+console.log (strOrNum [7, 9, 'num'])
+    
+      4. 
+      function findSumMaxAndMin (str) {
+        let longestWord = 0;
+        let shurtestWord = Infinity;
+        for(let i = 0; i < str.length; i++) {
+          if(str[i].length > longestWord)  {
+            longestWord = str[i].length;
+          }
+        }
+          for(let i = 0; i < str.length; i++) {
+          if(str[i].length < shurtestWord) { 
+        shurtestWord = str[i].length; 
+        } 
+        }
+         return longestWord + shurtestWord;
+        }
+      console.log(findSumMaxAndMin(['anymore', 'raven', 'me', 'communicate']));
+
+      5.
+      function findIndex (arr, num) {
+        for (let i=0; i<arr.length; i++) {
+          if (num === arr[i]) {
+            return i;
+          }
+        }
+               let a = Infinity;
+                let index;
+                for (let i=0; i<arr.length; i++){
+                let b = Math.abs(arr[i]-num);
+                if (b<a) {
+                 a=b;
+                 index=i;
+              }
+            }
+               return arr[index];
+          }
+      console.log (findIndex([21, -9, 15, 2116, -71, 33], -71))
+
+      6.
+      function splitSentense (arr) {
+        let arr = [];
+        for (let i=0; i<arr.length; i++) {
+          arr[i] ===arr["i"]
+          }
+          } retern arr
+          
+        }
+      } console.log (splitSentense([`May the Force be with you.`]))
+
+      7.function arrayMax(arr) {
+        let a = arr.length,  max = -Infinity;
+        while (a--) {
+          if (arr[a] > max) {
+            max = arr[a];
+          } 
+          let arr2 = [];
+          for (i=0; i<=max; i++) {
+            arr2.push(arr[a])
+          }
+      };
+      console.log (arrayMax ([4, 3, 0, 9,]))
+
+      8.
+      function sumArr (arr, arr1, arr2, arr3, arr4) {
+        let result = 0;
+        let arr5 =[]
+        for (let i=0; i<sumArr.lenght ; i++) {
+          for (let j=0; j<arr.lenght; j++) {
+            result += arr[j]
+            arr5.push(result)
+          }
+        }
+        return arr5;
+      }
+      console.log (sumArr([[3, 4, 5], [1, 0, 0], [4, 5, 4], [8, 8, -1]]))
+
+      9. 
+      const brush = '*'
+      const size =5;
+      let result = '';
+      for (let i=0; i<size; i++) {
+          let row = '';
+          for (let j=0; j<size; j++) {
+          if (i===0 || i=== size-1 ) {
+            row +=brush
+          } else if (j===1 || j===size-2) {
+            row +=brush
+          } else if (j===1 || j===size - 3) {
+            row +=brush
+          }
+            else {
+            row+=' '
+          }
+        } result +=row +'\n'
+      }
+      console.log (result)
+
+
+
+      
